@@ -1,0 +1,13 @@
+name: CD (Render.com auto-deploy)
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-info:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Informacja o CD
+      run: |
+        echo "Deployment następuje automatycznie przez Render.com po każdym pushu na gałąź main."
